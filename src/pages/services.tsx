@@ -1,3 +1,4 @@
+import React from "react";
 import ServiceCard from "../components/ServiceCard";
 
 const ServicesPage = () => {
@@ -35,10 +36,10 @@ const ServicesPage = () => {
     <section className=" bg-gray-900 lg:h-screen">
       <div className="mx-auto max-w-screen-xl py-8 px-4 lg:py-16 lg:px-6">
         <div className="mx-auto mb-8 max-w-screen-md text-center lg:mb-12">
-          <h2 className="mb-4 font-playfair text-4xl font-extrabold tracking-tight text-white">
+          <h2 className="font-playfair mb-4 text-4xl font-extrabold tracking-tight text-white">
             STARK SOLUTION SERVICES
           </h2>
-          <p className="mb-5 font-playfair font-light text-gray-300 sm:text-xl">
+          <p className="font-playfair mb-5 font-light text-gray-300 sm:text-xl">
             Stark Solutions provides affordable and reliable software solutions
             tailored to the specific needs of small businesses. Our direct and
             focused approach empowers our clients with the tools and resources
@@ -50,7 +51,7 @@ const ServicesPage = () => {
             <ServiceCard service={service} key={services.indexOf(service)} />
           ))}
         </div>
-        <p className="mt-4 text-center font-playfair italic text-gray-400">
+        <p className="font-playfair mt-4 text-center italic text-gray-400">
           Please note that pricing for our software services may vary depending
           on the specific needs of your business, and a minimum of 5 hours will
           be billed for every job.
