@@ -60,6 +60,7 @@ const MobileMenu = (props: MobileMenuProps) => {
                         <Link
                           href="/"
                           className="flex h-full w-full items-center"
+                          onClick={mobileMenu}
                         >
                           Home
                         </Link>
@@ -68,6 +69,7 @@ const MobileMenu = (props: MobileMenuProps) => {
                         <Link
                           href="/services"
                           className="flex h-full w-full items-center"
+                          onClick={mobileMenu}
                         >
                           Services
                         </Link>
@@ -76,6 +78,7 @@ const MobileMenu = (props: MobileMenuProps) => {
                         <Link
                           href="/contact"
                           className="flex h-full w-full items-center"
+                          onClick={mobileMenu}
                         >
                           Contact
                         </Link>
