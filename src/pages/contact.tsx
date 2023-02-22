@@ -46,7 +46,9 @@ const ContactPage = () => {
   };
 
   const handleSubmit = () => {
-    handleEmailSubmission({ email, subject, message });
+    handleEmailSubmission({ email, subject, message }).catch((error) => {
+      console.log(error);
+    });
   };
 
   return (
