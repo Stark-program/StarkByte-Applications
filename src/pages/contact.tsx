@@ -34,15 +34,19 @@ const ContactPage = () => {
   };
 
   const handleSubmit = () => {
-    handleEmailSubmission({ email, subject, message }).then((response) => {
-      console.log(response);
-      if (response.status === 201) {
-        setSuccess(true);
-        setEmail("");
-        setSubject("");
-        setMessage("");
-      }
-    });
+    handleEmailSubmission({ email, subject, message })
+      .then((response: ResponseType) => {
+        console.log(response);
+        if (response.status === 201) {
+          setSuccess(true);
+          setEmail("");
+          setSubject("");
+          setMessage("");
+        }
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   };
 
   return (
