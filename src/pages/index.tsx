@@ -14,7 +14,7 @@ const LandingPage = () => {
           property="og:description"
           content="Affordable development for big ideas."
         />
-        <meta property="og:image" content="https://i.imgur.com/EYDRIqx.png" />
+        <meta property="og:image" content="https://i.imgur.com/6Rmi1Qo.png" />
       </Head>
       <div className="min-h-screen w-full overflow-hidden ">
         <div className="lg:h-full lg:w-full">
