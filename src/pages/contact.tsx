@@ -29,7 +29,9 @@ const ContactPage = () => {
         body: JSON.stringify(data),
       });
 
-      return await sendEmail.json();
+      const response: ResponseType = await sendEmail.json();
+
+      return response;
     } catch (error) {
       throw error;
     }
