@@ -1,5 +1,3 @@
-import React from "react";
-
 const ServiceCard = (props: Service) => {
   if (!props?.service) {
     return null;
@@ -9,12 +7,12 @@ const ServiceCard = (props: Service) => {
 
     return (
       <div className="mx-auto flex max-w-lg flex-col rounded-lg border-gray-700 bg-gray-800  p-6 text-center text-white shadow xl:p-8">
-        <h3 className="font-playfair mb-4 text-2xl font-semibold">{title}</h3>
+        <h3 className="mb-4 font-playfair text-2xl font-semibold">{title}</h3>
         <p className="font-playfair font-light text-gray-200 sm:text-lg">
           {description}
         </p>
         <div className="my-8 flex items-baseline justify-center">
-          <span className="font-playfair mr-2 text-5xl font-extrabold">
+          <span className="mr-2 font-playfair text-5xl font-extrabold">
             {price}
           </span>
           <span className="font-playfair text-gray-200 ">/hour</span>
@@ -97,7 +95,7 @@ const ServiceCard = (props: Service) => {
         </ul>
         <a
           href="#"
-          className="font-playfair focus:ring-primary-200 dark:focus:ring-primary-900 rounded-lg bg-indigo-500 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-indigo-600 focus:ring-4  dark:text-white"
+          className="rounded-lg bg-indigo-500 px-5 py-2.5 text-center font-playfair text-sm font-medium text-white hover:bg-indigo-600 focus:ring-4 focus:ring-primary-200 dark:text-white  dark:focus:ring-primary-900"
         >
           Get started
         </a>

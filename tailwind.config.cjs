@@ -1,8 +1,5 @@
-<<<<<<< HEAD
 /** @type {import('tailwindcss').Config} */
 
-=======
->>>>>>> 6e70cd66edbcdd7f829ad2631910ad8e7a407327
 module.exports = {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
@@ -119,7 +116,6 @@ module.exports = {
     },
   },
 };
-<<<<<<< HEAD
 
 // module.exports = {
 //   content: ["./src/**/*.{js,ts,jsx,tsx}"],
@@ -138,5 +134,3 @@ module.exports = {
 //   },
 //   plugins: [],
 // };
-=======
->>>>>>> 6e70cd66edbcdd7f829ad2631910ad8e7a407327

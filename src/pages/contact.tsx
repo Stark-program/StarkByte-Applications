@@ -1,11 +1,7 @@
-<<<<<<< HEAD
 import { useState } from "react";
 import SuccessfulEmail from "../components/SuccessfulEmail";
 import Pageillustration from "../components/PageIllustration";
 import Background from "../components/Background";
-=======
-import React from "react";
->>>>>>> 6e70cd66edbcdd7f829ad2631910ad8e7a407327
 
 const ContactPage = () => {
   const [email, setEmail] = useState("");
@@ -54,15 +50,10 @@ const ContactPage = () => {
             <input
               type="email"
               id="email"
-<<<<<<< HEAD
               className="dark:shadow-sm-light block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 shadow-sm focus:border-primary-500 focus:ring-primary-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-primary-500 dark:focus:ring-primary-500"
               placeholder="example@example.com"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-=======
-              className="dark:shadow-sm-light focus:border-primary-500 focus:ring-primary-500 dark:focus:border-primary-500 dark:focus:ring-primary-500 block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 shadow-sm dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
-              placeholder="name@example.com"
->>>>>>> 6e70cd66edbcdd7f829ad2631910ad8e7a407327
               required
             />
           </div>
@@ -76,7 +67,7 @@ const ContactPage = () => {
             <input
               type="text"
               id="subject"
-              className="dark:shadow-sm-light focus:border-primary-500 focus:ring-primary-500 dark:focus:border-primary-500 dark:focus:ring-primary-500 block w-full rounded-lg border border-gray-300 bg-gray-50 p-3 text-sm text-gray-900 shadow-sm dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
+              className="dark:shadow-sm-light block w-full rounded-lg border border-gray-300 bg-gray-50 p-3 text-sm text-gray-900 shadow-sm focus:border-primary-500 focus:ring-primary-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-primary-500 dark:focus:ring-primary-500"
               placeholder="Let us know how we can help you"
               value={subject}
               onChange={(e) => setSubject(e.target.value)}
@@ -93,7 +84,7 @@ const ContactPage = () => {
             <textarea
               id="message"
               rows={6}
-              className="focus:border-primary-500 focus:ring-primary-500 dark:focus:border-primary-500 dark:focus:ring-primary-500 block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 shadow-sm dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
+              className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 shadow-sm focus:border-primary-500 focus:ring-primary-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-primary-500 dark:focus:ring-primary-500"
               placeholder="Write your message here..."
               value={message}
               onChange={(e) => setMessage(e.target.value)}
@@ -102,7 +93,7 @@ const ContactPage = () => {
           <button
             onClick={() => handleSubmit({ email, subject, message })}
             type="submit"
-            className="hover:bg-primary-800 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 rounded-lg bg-indigo-500 py-3 px-5 text-center text-sm font-medium text-white focus:outline-none focus:ring-4 sm:w-fit"
+            className="rounded-lg bg-indigo-500 py-3 px-5 text-center text-sm font-medium text-white hover:bg-primary-800 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 sm:w-fit"
           >
             Send message
           </button>
