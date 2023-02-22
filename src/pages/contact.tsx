@@ -27,15 +27,14 @@ const ContactPage = () => {
         body: JSON.stringify(data),
       });
 
-      const response: ResponseType = await sendEmail.json();
-
-      console.log(response);
-      if (response.status === 201) {
-        setSuccess(true);
-        setMessage("");
-        setEmail("");
-        setSubject("");
-      }
+      sendEmail.json().then((res: ResponseType) => {
+        if (res.status === 201) {
+          setSuccess(true);
+          setMessage("");
+          setEmail("");
+          setSubject("");
+        }
+      });
     } catch (error) {
       console.log(error);
     }
