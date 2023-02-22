@@ -21,17 +21,20 @@ const ContactPage = () => {
     data: ContactPageProps
   ): Promise<ResponseType> => {
     try {
-      const sendEmail = await fetch("/api/email", {
+      return fetch("/api/email", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(data),
-      });
-
-      const response: ResponseType = await sendEmail.json();
-
-      return response;
+      })
+        .then((response) => response.json())
+        .then((data: ResponseType) => {
+          return data;
+        })
+        .catch((error) => {
+          throw error;
+        });
     } catch (error) {
       throw error;
     }
