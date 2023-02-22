@@ -17,7 +17,9 @@ const ContactPage = () => {
     message: string;
   }
 
-  const handleEmailSubmission = async (data: ContactPageProps) => {
+  const handleEmailSubmission = async (
+    data: ContactPageProps
+  ): Promise<ResponseType> => {
     try {
       const sendEmail = await fetch("/api/email", {
         method: "POST",
@@ -29,7 +31,7 @@ const ContactPage = () => {
 
       return await sendEmail.json();
     } catch (error) {
-      console.log(error);
+      throw error;
     }
   };
 
