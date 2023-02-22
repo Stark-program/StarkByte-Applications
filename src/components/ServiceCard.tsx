@@ -2,8 +2,7 @@ const ServiceCard = (props: Service) => {
   if (!props?.service) {
     return null;
   } else {
-    const { title, description, image, alt, price, premium, freeUpdates } =
-      props.service;
+    const { title, description, price, premium, freeUpdates } = props.service;
 
     return (
       <div className="mx-auto flex max-w-lg flex-col rounded-lg border-gray-700 bg-gray-800  p-6 text-center text-white shadow xl:p-8">

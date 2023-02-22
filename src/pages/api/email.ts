@@ -9,7 +9,9 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
-  const { email, subject, message } = req.body;
+  const email: string = req.body.email;
+  const subject: string = req.body.subject;
+  const message: string = req.body.message;
 
   const emailToSend = {
     to: "support@starkbyteapps.com",

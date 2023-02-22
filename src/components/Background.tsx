@@ -1,5 +1,3 @@
-import PageIllustration from "./PageIllustration";
-
 const Background = () => {
   return (
     <>

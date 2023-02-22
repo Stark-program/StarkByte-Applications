@@ -7,6 +7,11 @@ const ContactPage = () => {
   const [message, setMessage] = useState("");
   const [success, setSuccess] = useState(false);
 
+  interface ResponseType {
+    status: number;
+    message: string;
+  }
+
   const handleSubmit = async (data: ContactPageProps) => {
     try {
       const sendEmail = await fetch("/api/email", {
@@ -16,7 +21,7 @@ const ContactPage = () => {
         },
         body: JSON.stringify(data),
       });
-      const response = await sendEmail.json();
+      const response: ResponseType = await sendEmail.json();
       console.log(response);
       if (response.status === 201) {
         setSuccess(true);
