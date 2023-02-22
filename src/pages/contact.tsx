@@ -123,7 +123,9 @@ const ContactPage = () => {
             Send message
           </button>
         </form>
-        <div className="mt-4">{success && <SuccessfulEmail />}</div>
+        <div className="mt-4 flex justify-center">
+          {success && <SuccessfulEmail />}
+        </div>
       </div>
     </section>
   );
