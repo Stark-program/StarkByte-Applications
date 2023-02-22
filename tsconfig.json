@@ -1,5 +1,14 @@
 {
   "compilerOptions": {
+<<<<<<< HEAD
+    "target": "es2017",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+=======
     "lib": [
       "dom",
       "dom.iterable",
@@ -11,19 +20,35 @@
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "incremental": true,
+>>>>>>> 6e70cd66edbcdd7f829ad2631910ad8e7a407327
     "esModuleInterop": true,
     "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
+<<<<<<< HEAD
+    "jsx": "preserve",
+    "incremental": true,
+    "noUncheckedIndexedAccess": true
+=======
     "jsx": "preserve"
+>>>>>>> 6e70cd66edbcdd7f829ad2631910ad8e7a407327
   },
   "include": [
     "next-env.d.ts",
     "**/*.ts",
+<<<<<<< HEAD
+    "**/*.tsx",
+    "**/*.cjs",
+    "**/*.mjs",
+    "tailwind.config.cjs"
+  ],
+  "exclude": ["node_modules"]
+=======
     "**/*.tsx"
   ],
   "exclude": [
     "node_modules"
   ]
+>>>>>>> 6e70cd66edbcdd7f829ad2631910ad8e7a407327
 }
