@@ -114,7 +114,6 @@ module.exports = {
       ],
       playfair: ["PT Sans", "sans-serif"],
     },
-  
   },
 };
 

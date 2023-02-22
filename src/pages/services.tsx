@@ -34,15 +34,13 @@ const ServicesPage = () => {
   return (
     <section className=" bg-gray-900 lg:h-screen">
       <div className="mx-auto max-w-screen-xl py-8 px-4 lg:py-16 lg:px-6">
-        <div className="mx-auto mb-8 max-w-screen-md text-center lg:mb-12">
-          <h2 className="mb-4 font-playfair text-4xl font-extrabold tracking-tight text-white">
-            STARK SOLUTION SERVICES
-          </h2>
-          <p className="mb-5 font-playfair font-light text-gray-300 sm:text-xl">
-            Stark Solutions provides affordable and reliable software solutions
-            tailored to the specific needs of small businesses. Our direct and
-            focused approach empowers our clients with the tools and resources
-            they need to succeed in today's competitive business environment.
+        <div className=" relative z-10 mx-auto mb-8 max-w-screen-md text-center lg:mb-12">
+          <p className=" mb-5 font-playfair text-2xl font-light text-gray-300 md:text-xl">
+            StarkByte Applications provides affordable and reliable application
+            solutions tailored to the specific needs of small businesses. Our
+            direct and focused approach empowers our clients with the tools and
+            resources they need to succeed in today's competitive business
+            environment.
           </p>
         </div>
         <div className="space-y-8 sm:gap-6 lg:grid lg:grid-cols-3 lg:space-y-0 xl:gap-10">
