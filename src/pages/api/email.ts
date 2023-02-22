@@ -5,8 +5,16 @@ dotenv.config();
 
 sgMail.setApiKey(process.env.SENDGRID_API_KEY!);
 
+interface ExtendedNextApiRequest extends NextApiRequest {
+  body: {
+    email: string;
+    subject: string;
+    message: string;
+  };
+}
+
 export default async function handler(
-  req: NextApiRequest,
+  req: ExtendedNextApiRequest,
   res: NextApiResponse
 ) {
   const email: string = req.body.email;
