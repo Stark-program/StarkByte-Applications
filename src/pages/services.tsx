@@ -39,7 +39,7 @@ const ServicesPage = () => {
             StarkByte Applications provides affordable and reliable application
             solutions tailored to the specific needs of small businesses. Our
             direct and focused approach empowers our clients with the tools and
-            resources they need to succeed in today's competitive business
+            resources they need to succeed in today&apos;s competitive business
             environment.
           </p>
         </div>

@@ -123,7 +123,7 @@ const Process = () => {
               <p className="text-center text-lg text-gray-400">
                 Our experienced team of developers designs user interfaces,
                 builds software features, and iterates on the development
-                process until the software meets the client's needs.
+                process until the software meets the client&apos;s needs.
               </p>
             </div>
 
