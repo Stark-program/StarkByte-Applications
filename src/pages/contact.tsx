@@ -1,7 +1,5 @@
 import { useState } from "react";
 import SuccessfulEmail from "../components/SuccessfulEmail";
-import Pageillustration from "../components/PageIllustration";
-import Background from "../components/Background";
 
 const ContactPage = () => {
   const [email, setEmail] = useState("");
