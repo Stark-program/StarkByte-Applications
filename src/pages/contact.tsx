@@ -27,14 +27,19 @@ const ContactPage = () => {
         body: JSON.stringify(data),
       });
 
-      sendEmail.json().then((res: ResponseType) => {
-        if (res.status === 201) {
-          setSuccess(true);
-          setMessage("");
-          setEmail("");
-          setSubject("");
-        }
-      });
+      sendEmail
+        .json()
+        .then((res: ResponseType) => {
+          if (res.status === 201) {
+            setSuccess(true);
+            setMessage("");
+            setEmail("");
+            setSubject("");
+          }
+        })
+        .catch((error) => {
+          console.log(error);
+        });
     } catch (error) {
       console.log(error);
     }
