@@ -27,27 +27,21 @@ const ContactPage = () => {
         body: JSON.stringify(data),
       });
 
-      sendEmail
-        .json()
-        .then((res: ResponseType) => {
-          if (res.status === 201) {
-            setSuccess(true);
-            setMessage("");
-            setEmail("");
-            setSubject("");
-          }
-        })
-        .catch((error) => {
-          console.log(error);
-        });
+      return await sendEmail.json();
     } catch (error) {
       console.log(error);
     }
   };
 
   const handleSubmit = () => {
-    handleEmailSubmission({ email, subject, message }).catch((error) => {
-      console.log(error);
+    handleEmailSubmission({ email, subject, message }).then((response) => {
+      console.log(response);
+      if (response.status === 201) {
+        setSuccess(true);
+        setEmail("");
+        setSubject("");
+        setMessage("");
+      }
     });
   };
 
