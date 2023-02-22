@@ -5,13 +5,13 @@ const Process = () => {
         <div className="pt-10 pb-12 md:pt-16 md:pb-20">
           <div className="mx-auto max-w-3xl pb-12 text-center md:pb-20">
             <h2
-              className="h2 mb-4 font-playfair text-xl  text-white"
+              className="h2 mb-4 font-playfair text-2xl font-bold text-white"
               data-aos="fade-up"
             >
               Built exclusively for your business.
             </h2>
             <p
-              className="text-xl text-gray-400"
+              className=" text-lg text-gray-400 lg:text-xl"
               data-aos="fade-up"
               data-aos-delay="200"
             >
@@ -65,7 +65,7 @@ const Process = () => {
                   strokeLinecap="square"
                 />
               </svg>
-              <h4 className="h4 mb-2 font-playfair text-white">
+              <h4 className="h4 mb-2 font-playfair text-xl font-bold text-white">
                 <span className="text-white">1</span>. Consultation and planning
               </h4>
               <p className="text-center text-lg text-gray-400">
@@ -117,7 +117,7 @@ const Process = () => {
                   />
                 </g>
               </svg>
-              <h4 className="h4 mb-2 font-playfair text-white">
+              <h4 className="h4 mb-2 font-playfair text-xl font-bold text-white">
                 <span className="text-white">2</span>. Design and development
               </h4>
               <p className="text-center text-lg text-gray-400">
@@ -158,7 +158,7 @@ const Process = () => {
                   strokeLinecap="square"
                 />
               </svg>
-              <h4 className="h4 mb-2 font-playfair text-white">
+              <h4 className="h4 mb-2 font-playfair text-xl font-bold text-white">
                 <span className="text-white">3</span>. Launch and support
               </h4>
               <p className="text-center text-lg text-gray-400">
