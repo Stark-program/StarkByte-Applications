@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+/** @type {import('tailwindcss').Config} */
+
+=======
+>>>>>>> 6e70cd66edbcdd7f829ad2631910ad8e7a407327
 module.exports = {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
@@ -114,3 +119,24 @@ module.exports = {
     },
   },
 };
+<<<<<<< HEAD
+
+// module.exports = {
+//   content: ["./src/**/*.{js,ts,jsx,tsx}"],
+//   theme: {
+//     extend: {
+//       backgroundColor: {
+//         "gray-900": "#13005A",
+//         "indigo-500": "#1C82AD",
+//         "indigo-600": "#00337c",
+//         "green-500": "#03C988",
+//       },
+//       fontFamily: {
+//         playfair: ["PT Sans", "sans-serif"],
+//       },
+//     },
+//   },
+//   plugins: [],
+// };
+=======
+>>>>>>> 6e70cd66edbcdd7f829ad2631910ad8e7a407327
