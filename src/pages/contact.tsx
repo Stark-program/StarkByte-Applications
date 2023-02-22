@@ -11,6 +11,11 @@ const ContactPage = () => {
     status: number;
     message: string;
   }
+  interface ContactPageProps {
+    email: string;
+    subject: string;
+    message: string;
+  }
 
   const handleSubmit = async (data: ContactPageProps) => {
     try {
@@ -21,7 +26,9 @@ const ContactPage = () => {
         },
         body: JSON.stringify(data),
       });
+
       const response: ResponseType = await sendEmail.json();
+
       console.log(response);
       if (response.status === 201) {
         setSuccess(true);
@@ -106,11 +113,5 @@ const ContactPage = () => {
     </section>
   );
 };
-
-interface ContactPageProps {
-  email: string;
-  subject: string;
-  message: string;
-}
 
 export default ContactPage;
