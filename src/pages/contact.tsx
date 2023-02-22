@@ -123,8 +123,8 @@ const ContactPage = () => {
             Send message
           </button>
         </form>
+        <div className="mt-4">{success && <SuccessfulEmail />}</div>
       </div>
-      <div className="mb-4">{success && <SuccessfulEmail />}</div>
     </section>
   );
 };
