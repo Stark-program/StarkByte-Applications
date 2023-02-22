@@ -124,7 +124,7 @@ const ContactPage = () => {
           </button>
         </form>
       </div>
-      {success && <SuccessfulEmail />}
+      <div className="mb-4">{success && <SuccessfulEmail />}</div>
     </section>
   );
 };
