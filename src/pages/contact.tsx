@@ -17,7 +17,7 @@ const ContactPage = () => {
     message: string;
   }
 
-  const handleSubmit = async (data: ContactPageProps) => {
+  const handleEmailSubmission = async (data: ContactPageProps) => {
     try {
       const sendEmail = await fetch("/api/email", {
         method: "POST",
@@ -43,6 +43,10 @@ const ContactPage = () => {
     } catch (error) {
       console.log(error);
     }
+  };
+
+  const handleSubmit = () => {
+    handleEmailSubmission({ email, subject, message });
   };
 
   return (
@@ -105,7 +109,7 @@ const ContactPage = () => {
             ></textarea>
           </div>
           <button
-            onClick={() => handleSubmit({ email, subject, message })}
+            onClick={() => handleSubmit()}
             type="submit"
             className="rounded-lg bg-indigo-500 py-3 px-5 text-center text-sm font-medium text-white hover:bg-primary-800 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 sm:w-fit"
           >
