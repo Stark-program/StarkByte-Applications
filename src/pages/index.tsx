@@ -7,6 +7,10 @@ const LandingPage = () => {
     <main className="grow overflow-hidden ">
       <Head>
         <title>StarkByte Applications</title>
+        <meta
+          name="description"
+          content="Affordable development for big ideas."
+        />
         <meta property="og:title" content="StarkByte Applications" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://starkbyteapps.com/" />
