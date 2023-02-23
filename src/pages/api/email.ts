@@ -20,6 +20,7 @@ export default async function handler(
   const email: string = req.body.email;
   const subject: string = req.body.subject;
   const message: string = req.body.message;
+  console.log(req.body);
 
   const emailToSend = {
     to: "support@starkbyteapps.com",
@@ -29,15 +30,15 @@ export default async function handler(
   };
 
   try {
-    const emailSent = await sgMail.send(emailToSend);
+    // const emailSent = await sgMail.send(emailToSend);
+    const emailSent = true;
+    console.log("this is emailsent", emailSent);
     if (emailSent) {
-      return res
-        .status(200)
-        .send({ status: 201, message: "Email sent successfully" });
+      return res.status(200).json({ message: "Email sent successfully" });
     }
+    return res.status(500).json({ message: "Email failed to send" });
   } catch (error) {
     console.error(error);
-    return res.status(500).send({ message: "Email failed to send" });
+    return res.status(500).json({ message: "Email failed to send" });
   }
-  console.log(req.body);
 }
