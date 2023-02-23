@@ -15,7 +15,7 @@ const MyApp: AppType = ({ Component, pageProps }) => {
   };
 
   return (
-    <div className="h-screen w-screen overflow-y-auto overflow-x-hidden scroll-smooth bg-gray-900">
+    <div className="h-screen w-screen overflow-y-auto overflow-x-hidden bg-gray-900">
       <Head>
         <meta
           name="theme-color"

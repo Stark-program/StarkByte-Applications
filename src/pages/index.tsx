@@ -4,7 +4,7 @@ import Head from "next/head";
 
 const LandingPage = () => {
   return (
-    <main className="grow overflow-hidden ">
+    <main className="grow">
       <Head>
         <title>StarkByte Applications</title>
         <meta
@@ -30,7 +30,7 @@ const LandingPage = () => {
         />
         <meta name="twitter:image" content="https://i.imgur.com/6Rmi1Qo.png" />
       </Head>
-      <div className="min-h-screen w-full overflow-hidden ">
+      <div className="min-h-screen w-full ">
         <div className="lg:h-full lg:w-full">
           <div className="flex h-full flex-col items-center justify-center lg:flex-row">
             <div className="flex flex-col">
