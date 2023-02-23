@@ -33,13 +33,9 @@ export default async function handler(
   };
 
   try {
-    const emailSent = await sgMail.send(emailToSend);
+    await sgMail.send(emailToSend);
 
-    console.log("this is emailsent", emailSent);
-    if (emailSent) {
-      return res.status(200).json({ message: "Email sent successfully" });
-    }
-    return res.status(500).json({ message: "Email failed to send" });
+    return res.status(200).json({ message: "Email sent successfully" });
   } catch (error) {
     console.error(error);
     return res.status(500).json({ message: "Email failed to send" });
