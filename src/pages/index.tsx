@@ -11,6 +11,16 @@ const LandingPage = () => {
           name="description"
           content="Affordable development for big ideas."
         />
+        <meta
+          name="theme-color"
+          content="#151719"
+          media="(prefers-color-scheme: light)"
+        />
+        <meta
+          name="theme-color"
+          content="#151719"
+          media="(prefers-color-scheme: dark)"
+        />
         <meta property="og:title" content="StarkByte Applications" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://starkbyteapps.com/" />
