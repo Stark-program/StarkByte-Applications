@@ -36,6 +36,7 @@ const MyApp: AppType = ({ Component, pageProps }) => {
         content="StarkByte Applications"
       />
       <meta name="mobile-web-app-capable" content="yes" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
       <div className="relative mx-auto h-0 max-w-5xl" aria-hidden="true">
         <Pageillustration />
       </div>
