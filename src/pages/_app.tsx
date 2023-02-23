@@ -26,6 +26,16 @@ const MyApp: AppType = ({ Component, pageProps }) => {
         content="#151719"
         media="(prefers-color-scheme: dark)"
       />
+      <meta name="apple-mobile-web-app-capable" content="yes" />
+      <meta
+        name="apple-mobile-web-app-status-bar-style"
+        content="black-translucent"
+      />
+      <meta
+        name="apple-mobile-web-app-title"
+        content="StarkByte Applications"
+      />
+      <meta name="mobile-web-app-capable" content="yes" />
       <div className="relative mx-auto h-0 max-w-5xl" aria-hidden="true">
         <Pageillustration />
       </div>
