@@ -16,6 +16,16 @@ const MyApp: AppType = ({ Component, pageProps }) => {
 
   return (
     <div className="h-screen w-screen overflow-y-auto overflow-x-hidden scroll-smooth bg-gray-900">
+      <meta
+        name="theme-color"
+        content="#151719"
+        media="(prefers-color-scheme: light)"
+      />
+      <meta
+        name="theme-color"
+        content="#151719"
+        media="(prefers-color-scheme: dark)"
+      />
       <div className="relative mx-auto h-0 max-w-5xl" aria-hidden="true">
         <Pageillustration />
       </div>
