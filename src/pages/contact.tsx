@@ -47,7 +47,7 @@ const ContactPage = () => {
 
   const renderContactPage = () => {
     return (
-      <section className="h-screen overflow-hidden bg-gray-900">
+      <section className="h-screen bg-gray-900">
         <div className="relative z-10 mx-auto max-w-screen-md py-8 px-4 lg:py-16">
           <p className="mb-8 text-center text-2xl font-light text-gray-400 md:text-xl lg:mb-16">
             We&apos;d love to hear about your software ideas and how we can help
