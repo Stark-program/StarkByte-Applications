@@ -13,6 +13,7 @@ interface ExtendedNextApiRequest extends NextApiRequest {
     email: string;
     subject: string;
     message: string;
+    serviceType: string;
   };
 }
 
@@ -23,13 +24,21 @@ export default async function handler(
   const email: string = req.body.email;
   const subject: string = req.body.subject;
   const message: string = req.body.message;
+  const serviceType: string = req.body.serviceType;
   console.log(req.body);
 
   const emailToSend = {
     to: "support@starkbyteapps.com",
     from: "cstark@starkbyteapps.com",
     subject: subject,
-    text: message + " " + "Sender email: " + email,
+    text:
+      "Service-Type: " +
+      serviceType +
+      "\n" +
+      "Sender email: " +
+      email +
+      "\n" +
+      message,
   };
 
   try {

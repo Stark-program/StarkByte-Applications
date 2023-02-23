@@ -8,6 +8,7 @@ const ContactPage = () => {
   const [success, setSuccess] = useState(false);
   const [sending, setSending] = useState(false);
   const [errorText, setErrorText] = useState("");
+  const [serviceType, setServiceType] = useState("");
 
   const validateEmailForm = () => {
     if (email === "" || subject === "" || message === "") {
@@ -30,7 +31,7 @@ const ContactPage = () => {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ email, subject, message }),
+        body: JSON.stringify({ email, subject, message, serviceType }),
       });
       if (response.status === 200) {
         setSuccess(true);
@@ -91,6 +92,23 @@ const ContactPage = () => {
                 required
               />
             </div>
+            <div>
+              <label
+                htmlFor="subject"
+                className="mb-2 block text-sm font-medium text-gray-900 dark:text-gray-300"
+              >
+                Service Type
+              </label>
+              <input
+                type="text"
+                id="serviceType"
+                className="dark:shadow-sm-light block w-full rounded-lg border border-gray-300 bg-gray-50 p-3 text-sm text-gray-900 shadow-sm focus:border-primary-500 focus:ring-primary-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-primary-500 dark:focus:ring-primary-500"
+                placeholder="Let us know what service you are interested in"
+                value={serviceType}
+                onChange={(e) => setServiceType(e.target.value)}
+                required
+              />
+            </div>
             <div className="sm:col-span-2">
               <label
                 htmlFor="message"
@@ -102,7 +120,7 @@ const ContactPage = () => {
                 id="message"
                 rows={6}
                 className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 shadow-sm focus:border-primary-500 focus:ring-primary-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-primary-500 dark:focus:ring-primary-500"
-                placeholder="Write your message here..."
+                placeholder="Give us details about your project idea"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
               ></textarea>
