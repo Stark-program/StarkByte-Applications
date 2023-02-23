@@ -54,7 +54,9 @@ const ContactPage = () => {
             us to get the conversation started.
           </p>
           <div className="space-y-8">
-            {errorText}
+            <div className="flex justify-center font-playfair text-2xl text-red-600">
+              {errorText}
+            </div>
             <div>
               <label
                 htmlFor="email"
