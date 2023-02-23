@@ -106,7 +106,8 @@ const ContactPage = () => {
               ></textarea>
             </div>
             <button
-              onClick={() => handleSubmit()}
+              // eslint-disable-next-line @typescript-eslint/no-misused-promises
+              onClick={handleSubmit}
               className="rounded-lg bg-indigo-500 py-3 px-5 text-center text-sm font-medium text-white hover:bg-primary-800 focus:outline-none focus:ring-4 focus:ring-primary-300 disabled:bg-red-600 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 sm:w-fit"
               disabled={sending}
             >
