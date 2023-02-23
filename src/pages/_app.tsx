@@ -15,7 +15,7 @@ const MyApp: AppType = ({ Component, pageProps }) => {
   };
 
   return (
-    <div className="overflow-y-auto overflow-x-hidden scroll-smooth bg-gray-900">
+    <div className="h-screen w-screen overflow-y-auto overflow-x-hidden scroll-smooth bg-gray-900">
       <div className="relative mx-auto h-0 max-w-5xl" aria-hidden="true">
         <Pageillustration />
       </div>
