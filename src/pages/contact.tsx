@@ -9,58 +9,6 @@ const ContactPage = () => {
   const [sending, setSending] = useState(false);
   const [errorText, setErrorText] = useState("");
 
-  interface ResponseType {
-    status: number;
-    message: string;
-  }
-  interface ContactPageProps {
-    email: string;
-    subject: string;
-    message: string;
-  }
-
-  // const handleEmailSubmission = async (
-  //   data: ContactPageProps
-  // ): Promise<ResponseType> => {
-  //   try {
-  //     return fetch("/api/email", {
-  //       method: "POST",
-  //       headers: {
-  //         "Content-Type": "application/json",
-  //       },
-  //       body: JSON.stringify(data),
-  //     })
-  //       .then((response) => response.json())
-  //       .then((data: ResponseType) => {
-  //         return data;
-  //       })
-  //       .catch((error) => {
-  //         throw error;
-  //       });
-  //   } catch (error) {
-  //     throw error;
-  //   }
-  // };
-
-  // const handleSubmit = () => {
-  //   handleEmailSubmission({ email, subject, message })
-  //     .then((response: ResponseType) => {
-  //       console.log(response);
-  //       if (response.status === 201) {
-  //         setSuccess(true);
-  //         setEmail("");
-  //         setSubject("");
-  //         setMessage("");
-  //         setTimeout(() => {
-  //           setSuccess(false);
-  //         }, 10000);
-  //       }
-  //     })
-  //     .catch((error) => {
-  //       console.log(error);
-  //     });
-  // };
-
   const validateEmailForm = () => {
     if (email === "" || subject === "" || message === "") {
       return false;
@@ -85,9 +33,7 @@ const ContactPage = () => {
         body: JSON.stringify({ email, subject, message }),
       });
       if (response.status === 200) {
-        const data = await response.json();
         setSuccess(true);
-        console.log(data);
       } else {
         setErrorText("Something went wrong. Email unsuccessful.");
       }
