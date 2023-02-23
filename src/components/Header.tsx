@@ -33,7 +33,7 @@ const Header = () => {
         </Link>
       </div>
       <div className="z-10 flex w-1/3 justify-end space-x-10">
-        <Link
+        {/* <Link
           href="https://twitter.com/"
           rel="noopener noreferrer"
           target="_blank"
@@ -53,7 +53,7 @@ const Header = () => {
           target="_blank"
         >
           <AiFillInstagram className="text-3xl text-gray-400" />
-        </Link>
+        </Link> */}
       </div>
     </div>
   );
