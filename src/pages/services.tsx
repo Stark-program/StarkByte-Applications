@@ -35,7 +35,7 @@ const ServicesPage = () => {
   ];
 
   return (
-    <section className=" bg-gray-900 lg:h-screen">
+    <section className=" bg-gray-900">
       <div className="mx-auto max-w-screen-xl py-8 px-4 lg:py-16 lg:px-6">
         <div className=" relative z-10 mx-auto mb-8 max-w-screen-md text-center lg:mb-12">
           <p className=" mb-5 font-playfair text-2xl font-light text-gray-300 md:text-xl">

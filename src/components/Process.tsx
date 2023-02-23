@@ -11,7 +11,7 @@ const Process = () => {
               Built exclusively for your business.
             </h2>
             <p
-              className=" text-lg text-gray-400 lg:text-xl"
+              className="text-lg text-gray-400 lg:text-xl"
               data-aos="fade-up"
               data-aos-delay="200"
             >

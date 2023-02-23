@@ -30,9 +30,9 @@ const LandingPage = () => {
         />
         <meta name="twitter:image" content="https://i.imgur.com/6Rmi1Qo.png" />
       </Head>
-      <div className="min-h-screen w-full ">
-        <div className="lg:h-full lg:w-full">
-          <div className="flex h-full flex-col items-center justify-center lg:flex-row">
+      <div className="">
+        <div className="">
+          <div className="flex flex-col items-center justify-center lg:flex-row">
             <div className="flex flex-col">
               <LandingPageTitle />
               <Process />
