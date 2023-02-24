@@ -7,6 +7,7 @@ import MobileMenu from "../components/mobile/MobileMenu";
 import Header from "../components/Header";
 import "../styles/globals.css";
 import Head from "next/head";
+
 const MyApp: AppType = ({ Component, pageProps }) => {
   const [mobileMenu, setMobileMenu] = useState(false);
 
@@ -17,6 +18,7 @@ const MyApp: AppType = ({ Component, pageProps }) => {
   return (
     <div className="min-h-screen w-screen overflow-y-auto overflow-x-hidden bg-gray-900">
       <Head>
+        <link rel="icon" href="/s.svg" />
         <meta
           name="theme-color"
           content="#151719"
