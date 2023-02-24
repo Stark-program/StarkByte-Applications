@@ -121,7 +121,7 @@ const Process = () => {
                 <span className="text-white">2</span>. Design and development
               </h4>
               <p className="text-center text-lg text-gray-400">
-                Our experienced team of developers designs user interfaces,
+                Our experienced team of developers design user interfaces,
                 builds software features, and iterates on the development
                 process until the software meets the client&apos;s needs.
               </p>
