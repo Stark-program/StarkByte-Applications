@@ -121,9 +121,9 @@ const Process = () => {
                 <span className="text-white">2</span>. Design and development
               </h4>
               <p className="text-center text-lg text-gray-400">
-                Our experienced team of developers design user interfaces,
-                builds software features, and iterates on the development
-                process until the software meets the client&apos;s needs.
+                Our experienced team of developers design user interfaces, build
+                software features, and iterate on the development process until
+                the software meets the client&apos;s needs.
               </p>
             </div>
 
@@ -162,9 +162,9 @@ const Process = () => {
                 <span className="text-white">3</span>. Launch and support
               </h4>
               <p className="text-center text-lg text-gray-400">
-                We help clients get their software up and running and provide
-                ongoing support and maintenance, including bug fixing, new
-                feature additions, and technical support as needed.
+                We help clients get their software deployed and provide ongoing
+                support and maintenance. This includes bug fixing, new feature
+                additions, and technical support as needed.
               </p>
             </div>
           </div>
