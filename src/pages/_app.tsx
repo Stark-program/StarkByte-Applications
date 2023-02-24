@@ -16,7 +16,7 @@ const MyApp: AppType = ({ Component, pageProps }) => {
   };
 
   return (
-    <div className="min-h-screen w-screen overflow-y-auto overflow-x-hidden bg-gray-900">
+    <div className="min-h-screen overflow-y-auto overflow-x-hidden bg-gray-900">
       <Head>
         <link rel="icon" href="/s.svg" />
         <meta
