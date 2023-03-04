@@ -13,9 +13,9 @@ const ServicesPage = () => {
       premium: false,
     },
     {
-      title: "Fullstack Website",
+      title: "Comprehensive Website",
       description:
-        "A fullstack website is a more complex website that consists of multiple pages and is built using a fullstack development framework. This type of website is suitable for businesses that require more advanced functionality such as e-commerce, custom forms, and integrations with other services",
+        "A comprehensive website is a more complex website that consists of multiple pages and is built using a fullstack development framework. This type of website is suitable for businesses that require more advanced functionality such as e-commerce, custom forms, and integrations with other services",
       image: "https://links.papareact.com/3ke",
       alt: "Picture of the author",
       price: "$40",
