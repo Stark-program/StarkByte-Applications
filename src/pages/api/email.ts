@@ -42,9 +42,16 @@ export default async function handler(
   };
 
   try {
-    await sgMail.send(emailToSend);
-
-    return res.status(200).json({ message: "Email sent successfully" });
+    await sgMail
+      .send(emailToSend)
+      .then(() => {
+        console.log("Email sent");
+        return res.status(200).json({ message: "Email sent successfully" });
+      })
+      .catch((error) => {
+        console.error(error);
+        return res.status(500).json({ message: "Email failed to send" });
+      });
   } catch (error) {
     console.error(error);
     return res.status(500).json({ message: "Email failed to send" });
